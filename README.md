@@ -22,7 +22,7 @@ vim /etc/my.cnf
 - Dentro do arquivo, procurar por:
 bind-address = 127.0.0.1
 - E mudar para o gateway do doker:
-bind-address = 172.17.0.1,172.17.0.1
+bind-address = 127.0.0.1,172.17.0.1
 - Reiniciar o Mariadb (ou Mysql):
 sudo systemctl restart mysqld
 
