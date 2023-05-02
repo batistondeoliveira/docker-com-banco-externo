@@ -28,8 +28,6 @@ sudo systemctl restart mysqld
 
 2. Permissões do usuário root no banco de dados:
 
-Execute:
-
 a-) Acesse o mysql
 ```
 mysql -u root
