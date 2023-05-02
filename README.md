@@ -26,7 +26,26 @@ bind-address = 172.17.0.1,172.17.0.1
 - Reiniciar o Mariadb (ou Mysql):
 sudo systemctl restart mysqld
 
-Configurações executar
+2. Permissões do usuário root no banco de dados:
+
+Execute:
+
+a-) Acesse o mysql
+```
+mysql -u root
+```
+
+b-) De permissão para o IP 172.17.0.1
+```
+grant all privileges on *.* to ‘root’@’172.17.0.1' identified by ‘my_password’;
+```
+
+c-) Atualize os privilégios
+```
+flush privileges;
+```
+
+Como executar
 ------------
 Na pasta root do projeto execute:
 ```
